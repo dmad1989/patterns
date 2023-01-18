@@ -1,5 +1,8 @@
 package ru.arzhanov.creational.singelton;
 
+import lombok.Getter;
+import lombok.Setter;
+
 public class SingletoneOne {
 
     private static SingletoneOne instance;
@@ -10,6 +13,10 @@ public class SingletoneOne {
         }
         return instance;
     }
+
+    @Getter
+    @Setter
+    public String field;
 
     private SingletoneOne(){
 
