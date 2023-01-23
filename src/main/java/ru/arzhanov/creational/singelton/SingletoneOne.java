@@ -3,22 +3,18 @@ package ru.arzhanov.creational.singelton;
 import lombok.Getter;
 import lombok.Setter;
 
-public class SingletoneOne {
+public class SingletoneOne implements ISingeltone {
 
-    private static SingletoneOne instance;
+  private static SingletoneOne instance;
 
-    public static SingletoneOne getInstance(){
-        if (instance == null) {
-            instance = new SingletoneOne();
-        }
-        return instance;
+  public static SingletoneOne getInstance() {
+    if (instance == null) {
+      instance = new SingletoneOne();
     }
+    return instance;
+  }
 
-    @Getter
-    @Setter
-    public String field;
+  @Getter @Setter public String field;
 
-    private SingletoneOne(){
-
-    }
+  private SingletoneOne() {}
 }
