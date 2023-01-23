@@ -28,6 +28,4 @@ class SingletoneTest {
     s1.setField("This is set for first");
     assertEquals(s1.getField(), s2.getField());
   }
-
-  // TODO another variants + tests
 }
