@@ -19,5 +19,16 @@ class SingletoneTest {
         assertEquals(s1.getField(), s2.getField());
     }
 
+    @Test
+    void testSingeltoneTwo() {
+
+        SingeltoneTwo st1 = SingeltoneTwo.getInstance();
+        SingeltoneTwo st2 = SingeltoneTwo.getInstance();
+
+        assertEquals(st1, st2);
+        assertEquals(st1.hashCode(), st2.hashCode() );
+
+    }
+
     // TODO another variants + tests
 }
